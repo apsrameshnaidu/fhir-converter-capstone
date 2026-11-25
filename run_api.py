@@ -18,7 +18,7 @@ def main() -> None:
     parser.add_argument("--reload", action="store_true", help="Auto-reload on code changes")
     args = parser.parse_args()
 
-    uvicorn.run("api.main:app", host=args.host, port=args.port, reload=args.reload)
+    uvicorn.run("api.app:app", host=args.host, port=args.port, reload=args.reload)
 
 
 if __name__ == "__main__":

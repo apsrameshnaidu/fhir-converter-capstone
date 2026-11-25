@@ -3,7 +3,7 @@ from pathlib import Path
 
 from fastapi.testclient import TestClient
 
-from api.main import app
+from api.app import app
 
 client = TestClient(app)
 SAMPLES = Path(__file__).resolve().parent.parent / "data" / "sample"

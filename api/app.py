@@ -1,7 +1,7 @@
 """FastAPI server exposing the FHIR converter over HTTP.
 
 Run with:
-    uvicorn api.main:app --reload
+    uvicorn api.app:app --reload   (or: python run_api.py --reload)
 
 Interactive docs are served at http://127.0.0.1:8000/docs
 """
